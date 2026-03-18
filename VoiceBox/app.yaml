@@ -1,0 +1,13 @@
+command:
+  - python
+  - app.py
+
+resources:
+  - name: llama-endpoint
+    serving_endpoint:
+      name: databricks-meta-llama-3-3-70b-instruct
+      permission: CAN_QUERY
+  - name: claude-endpoint
+    serving_endpoint:
+      name: databricks-claude-sonnet-4
+      permission: CAN_QUERY
